@@ -21,5 +21,11 @@
   "bugs": {
     "url": "https://github.com/masterl/kops/issues"
   },
-  "homepage": "https://github.com/masterl/kops#readme"
+  "homepage": "https://github.com/masterl/kops#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-task-loader": "^1.5.0",
+    "knockout": "^3.4.2"
+  }
 }
