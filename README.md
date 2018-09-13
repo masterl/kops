@@ -2,7 +2,8 @@
 
 Project structure for SPA development using KnockoutJS, Pug and Stylus
 
-Maybe create a yeoman generator from this?
+## Future (?):
+- Maybe create a yeoman generator from this?
 
 ## Note:
 

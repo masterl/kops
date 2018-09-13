@@ -10,6 +10,8 @@ module.exports = function () {
 
   return gulp.src([
     'node_modules/requirejs/require.js',
+    'node_modules/page/page.js',
+    'node_modules/text/text.js'
   ])
     .pipe(minify({
       noSource: true,

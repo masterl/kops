@@ -10,4 +10,6 @@ html(lang='en')
   body
     p Kops first index
 
+    .container(data-bind='component: { name: current_route().component, params: current_route().params }')
+
     script(data-main="js/app/config", src="js/vendor/require.js")
