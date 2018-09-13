@@ -12,5 +12,5 @@ const compile_tasks = [
 ];
 
 gulp.task('default',npm_tasks.concat(compile_tasks), () => {
-
+  gulp.watch('src/index.pug', ['compile:index']);
 });
