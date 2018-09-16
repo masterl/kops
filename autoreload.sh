@@ -4,8 +4,6 @@ readonly PROJECT_ROOT=$( cd "$( dirname "$0" )" && pwd )
 
 reload_command="${PROJECT_ROOT}/reload-browser Firefox"
 
-readonly git_status_command="git status"
-
 readonly print_line="echo \\\"==================================================\\\""
 
 readonly entr_commands="
@@ -15,9 +13,6 @@ $print_line;
 $reload_command;
 echo;
 $print_line;
-echo \"Running GIT Status...\"
-$print_line;
-$git_status_command;
 echo;
 date;
 "
