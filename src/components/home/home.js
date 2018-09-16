@@ -1,8 +1,9 @@
+import ko from 'knockout';
 import template from './home.pug';
 
 class HomeModel {
-  constructor (something) {
-    this.something = something;
+  constructor (router) {
+    this.msg = ko.observable('Kops Home!');
   }
 }
 
