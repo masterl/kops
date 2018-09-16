@@ -1,6 +1,6 @@
 {
   "name": "kops",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "description": "Project structure for SPA development using KnockoutJS, Pug and Stylus",
   "main": "index.js",
   "scripts": {

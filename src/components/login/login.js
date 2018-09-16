@@ -1,10 +1,9 @@
 import ko from 'knockout';
 import template from './login.pug';
+import router from 'app/router';
 
 class LoginModel {
-  constructor (router) {
-    this.router = router;
-
+  constructor (params) {
     this.email = ko.observable('');
     this.password = ko.observable('');
   }
@@ -12,7 +11,7 @@ class LoginModel {
   login () {
     // check login
 
-    this.router.redirect_to('home');
+    router.redirect_to('home');
   }
 }
 

@@ -36,7 +36,7 @@ class Router {
   update_current_route (route, ctx) {
     this.current_route({
       component: route.component,
-      params:    this
+      params:    ctx.params
     });
   }
 
