@@ -16,7 +16,7 @@ const compile_tasks = [
   'compile:js'
 ];
 
-gulp.task('default',npm_tasks.concat(compile_tasks), () => {
+gulp.task('default', npm_tasks.concat(compile_tasks), () => {
   gulp.watch('src/index.pug', ['compile:index']);
   gulp.watch('src/components/**/*.pug', ['compile:templates']);
   gulp.watch('src/stylus/**/*.styl', ['compile:stylus']);

@@ -8,6 +8,6 @@ const dest_dir = path.join(build_dir, 'js', 'components');
 
 module.exports = () => {
   return gulp.src('src/components/**/*.pug')
-  .pipe(pug({}))
-  .pipe(gulp.dest(dest_dir))
+    .pipe(pug({}))
+    .pipe(gulp.dest(dest_dir));
 };

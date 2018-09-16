@@ -2,7 +2,7 @@ define(['knockout', 'vendor/page'],
   (ko, page) => {
     const app_routes = [
       {
-        url: '',
+        url:       '',
         component: 'home'
       }
     ];
@@ -25,14 +25,13 @@ define(['knockout', 'vendor/page'],
       }
 
       apply_route (route) {
-
-        page(route.url, ctx => this.update_current_route(route, ctx))
+        page(route.url, ctx => this.update_current_route(route, ctx));
       }
 
       update_current_route (route, ctx) {
         this.current_route({
           component: route.component,
-          params: ctx.params
+          params:    ctx.params
         });
       }
     }
