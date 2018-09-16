@@ -1,3 +1,3 @@
 const path = require('path');
 
-module.exports = path.resolve(path.join(__dirname, 'src'));
+module.exports = path.resolve(path.join(__dirname, '..', 'src'));
