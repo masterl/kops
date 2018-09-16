@@ -2,7 +2,8 @@ import ko from 'knockout';
 import router from './router';
 
 const components_names = [
-  'home'
+  'home',
+  'login'
 ];
 
 components_names.map(component_name => {

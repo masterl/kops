@@ -1,6 +1,6 @@
 {
   "name": "kops",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Project structure for SPA development using KnockoutJS, Pug and Stylus",
   "main": "index.js",
   "scripts": {
@@ -28,6 +28,7 @@
     "@babel/polyfill": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "apply-loader": "^2.0.0",
+    "babel-loader": "^8.0.2",
     "chalk": "^2.4.1",
     "eslint": "^5.6.0",
     "eslint-config-standard": "^12.0.0",
@@ -45,6 +46,7 @@
     "gulp-rename": "^1.4.0",
     "gulp-stylus": "^2.7.0",
     "gulp-task-loader": "^1.5.0",
+    "ignore-loader": "^0.1.2",
     "knockout": "^3.4.2",
     "normalize.css": "^8.0.0",
     "page": "^1.10.1",

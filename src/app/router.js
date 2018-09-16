@@ -4,6 +4,10 @@ import page from 'page';
 const app_routes = [
   {
     url:       '',
+    component: 'login'
+  },
+  {
+    url:       'home',
     component: 'home'
   }
 ];
@@ -32,8 +36,12 @@ class Router {
   update_current_route (route, ctx) {
     this.current_route({
       component: route.component,
-      params:    ctx.params
+      params:    this
     });
+  }
+
+  redirect_to (path) {
+    page.redirect(path);
   }
 }
 

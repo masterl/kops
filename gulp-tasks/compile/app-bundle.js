@@ -3,7 +3,6 @@ const webpack = require('webpack-stream');
 const path    = require('path');
 
 const build_dir = require('../../build_utils/build_dir');
-const src_dir   = require('../../build_utils/src_dir');
 
 const dest_dir = path.join(build_dir, 'js');
 
@@ -17,9 +16,8 @@ module.exports = () => {
       module: {
         rules: [
           {
-            test:    /\.js$/,
-            include: [path.join(src_dir, 'components')],
-            use:     {
+            test: /\.js$/,
+            use:  {
               loader:  'babel-loader',
               options: {
                 presets: ['@babel/preset-env']
@@ -27,9 +25,12 @@ module.exports = () => {
             }
           },
           {
-            test:    /\.pug$/,
-            // include: [path.join(src_dir, 'components')],
-            use:     ['apply-loader', 'pug-loader']
+            test: /\.pug$/,
+            use:  ['apply-loader', 'pug-loader']
+          },
+          {
+            test: /\.styl$/,
+            use:  ['ignore-loader']
           }
         ]
       },
