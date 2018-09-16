@@ -1,11 +1,9 @@
-define(['knockout', 'text!./home.html'],
-  (ko, template) => {
-    class ViewModel {
-      constructor (something) {
-        this.something = something;
-      }
-    }
+import template from './home.pug';
 
-    return { ViewModel, template };
+class HomeModel {
+  constructor (something) {
+    this.something = something;
   }
-);
+}
+
+export default { viewModel: HomeModel, template };

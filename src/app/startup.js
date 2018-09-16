@@ -1,15 +1,14 @@
-define(['knockout', './router'],
-  (ko, router) => {
-    const components_names = [
-      'home'
-    ];
+import ko from 'knockout';
+import router from './router';
 
-    components_names.map(component_name => {
-      ko.components.register(component_name, { require: `components/${component_name}/${component_name}` });
-    });
+const components_names = [
+  'home'
+];
 
-    router.start();
+components_names.map(component_name => {
+  ko.components.register(component_name, require(`../components/${component_name}/${component_name}`).default);
+});
 
-    ko.applyBindings({ current_route: router.current_route });
-  }
-);
+router.start();
+
+ko.applyBindings({ current_route: router.current_route });
