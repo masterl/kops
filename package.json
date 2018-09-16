@@ -1,11 +1,12 @@
 {
   "name": "kops",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Project structure for SPA development using KnockoutJS, Pug and Stylus",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "./node_modules/.bin/eslint ."
+    "lint": "./node_modules/.bin/eslint .",
+    "dev": "KOPS_DEV=true gulp startdev"
   },
   "repository": {
     "type": "git",

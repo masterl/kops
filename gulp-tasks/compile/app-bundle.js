@@ -6,10 +6,12 @@ const build_dir = require('../../build_utils/build_dir');
 
 const dest_dir = path.join(build_dir, 'js');
 
+const mode = process.env.KOPS_DEV ? 'development' : 'production';
+
 module.exports = () => {
   return gulp.src('src/app/startup.js')
     .pipe(webpack({
-      mode:   'development',
+      mode,
       output: {
         filename: 'bundle.js'
       },
