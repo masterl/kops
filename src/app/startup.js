@@ -1,4 +1,5 @@
 import ko from 'knockout';
+import './bindings';
 import router from './router';
 
 const components_names = [
