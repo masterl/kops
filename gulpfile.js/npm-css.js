@@ -1,7 +1,7 @@
 const { src, dest } = require('gulp');
 const path          = require('path');
 const concat        = require('gulp-concat');
-const cssnano       = require('gulp-cssnano');
+const postcss       = require('gulp-postcss');
 
 const build_dir = require('../build_utils/build_dir');
 
@@ -13,7 +13,7 @@ const npm_css = () => {
     'node_modules/normalize.css/normalize.css'
   ])
     .pipe(concat('plugins.css'))
-    .pipe(cssnano())
+    .pipe(postcss())
     .pipe(dest(dest_dir));
 };
 
