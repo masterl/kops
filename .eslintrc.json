@@ -1,4 +1,5 @@
 {
+  "root": true,
   "extends": "standard",
   "parserOptions": {
     "ecmaVersion": 2018,
@@ -17,12 +18,15 @@
   "rules": {
     "eqeqeq": ["error", "smart"],
     "camelcase": ["off", {"properties": "always"}],
-    "semi": ["error","always"],
+    "semi": ["error", "always"],
     "curly": "error",
-    "prefer-const": "warn",
+    "prefer-const": "error",
     "no-const-assign": "error",
+    "indent": ["error", 4, { "SwitchCase": 1 }],
+    "linebreak-style": [ "error", "unix" ],
+    "quotes": [ "error", "single" ],
     "no-var": "error",
-    "padded-blocks": ["off", "always"],
+    "padded-blocks": ["error", "never"],
     "operator-assignment": ["error", "always"],
     "no-cond-assign": ["error","always"],
     "key-spacing": [
@@ -37,9 +41,28 @@
     "no-multi-spaces": [
       "error", {
         "exceptions": {
-          "VariableDeclarator": true
+          "VariableDeclarator": true,
+          "ImportDeclaration": true
         }
       }
-    ]
+    ],
+    "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 1 }],
+    "padded-blocks": ["error", "never"],
+    "operator-assignment": ["error", "always"],
+    "space-infix-ops": "error",
+    "object-curly-newline": ["error", {
+        "ObjectExpression": {"minProperties": 1},
+        "ImportDeclaration": {"minProperties": 2, "consistent": true}
+      }
+    ],
+    "object-curly-spacing": ["error", "always"],
+    "object-property-newline": "error",
+    "brace-style": ["error", "allman"],
+    "no-trailing-spaces": "error",
+    "arrow-parens": ["error", "as-needed"],
+    "array-element-newline": ["error", "always"],
+    "array-bracket-newline": ["error", { "multiline": true, "minItems": 1 }],
+    "arrow-spacing": "error",
+    "function-paren-newline": ["error", "multiline"]
   }
 }
