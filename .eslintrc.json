@@ -64,6 +64,7 @@
     "array-element-newline": ["error", "always"],
     "array-bracket-newline": ["error", { "multiline": true, "minItems": 1 }],
     "arrow-spacing": "error",
-    "function-paren-newline": ["error", "multiline"]
+    "function-paren-newline": ["error", "multiline"],
+    "newline-per-chained-call": ["error", {"ignoreChainWithDepth": 1}]
   }
 }
