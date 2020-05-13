@@ -1,17 +1,13 @@
-import ko     from 'knockout';
+import ko from 'knockout';
 import './bindings';
-import router from './router';
+import { list_components } from './component_loaders';
+import router              from './router';
 
-const components_names = [
-    'home',
-    'login'
-];
-
-components_names.map(component_name =>
+list_components().forEach(component =>
 {
     ko.components.register(
-        component_name,
-        require(`../components/${component_name}/${component_name}`).default
+        component.name,
+        component.config
     );
 });
 
