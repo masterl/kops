@@ -25,14 +25,14 @@
   },
   "homepage": "https://github.com/masterl/kops#readme",
   "devDependencies": {
-    "@babel/core": "^7.9.0",
+    "@babel/core": "^7.9.6",
     "@babel/polyfill": "^7.8.7",
-    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-env": "^7.9.6",
     "apply-loader": "^2.0.0",
     "babel-loader": "^8.1.0",
     "chalk": "^4.0.0",
     "cssnano": "^4.1.10",
-    "eslint": "^6.8.0",
+    "eslint": "^7.0.0",
     "eslint-config-standard": "^14.1.1",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-node": "^11.1.0",
@@ -47,9 +47,9 @@
     "knockout": "^3.5.1",
     "live-server": "^1.2.1",
     "normalize.css": "^8.0.1",
-    "page": "^1.11.5",
+    "page": "^1.11.6",
     "pug-loader": "^2.4.0",
-    "webpack": "^4.42.1",
+    "webpack": "^4.43.0",
     "webpack-stream": "^5.2.1"
   }
 }
