@@ -1,10 +1,5 @@
 import path from 'path';
 
-const filename_without_extension = filepath =>
-{
-    return path.basename(filepath, '.js');
-};
-
 export function list_components ()
 {
     const require_component = require.context(
@@ -14,12 +9,12 @@ export function list_components ()
     );
 
     const components = require_component.keys()
-        .map(file_name =>
+        .map(file_path =>
         {
-            const component_config = require_component(file_name);
+            const component_config = require_component(file_path);
 
             return {
-                name:   filename_without_extension(file_name),
+                name:   path.basename(file_path, '.js'),
                 config: component_config.default || component_config
             };
         });
