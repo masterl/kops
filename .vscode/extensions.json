@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "eamodio.gitlens",
+        "mhutchie.git-graph",
+        "davidanson.vscode-markdownlint",
+        "editorconfig.editorconfig",
+        "aaron-bond.better-comments",
+        "zhuangtongfa.material-theme",
+        "dbaeumer.vscode-eslint"
+    ]
+}
