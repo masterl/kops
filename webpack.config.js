@@ -41,6 +41,9 @@ module.exports = {
             knockout: 'knockout/build/output/knockout-latest.js',
             page:     'page/page.js',
             app:      path.join(src_dir, 'app')
+        },
+        fallback: {
+            path: require.resolve('path-browserify')
         }
     }
 };
